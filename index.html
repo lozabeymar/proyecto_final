@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Precio de la Canasta Familiar</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="container">
@@ -86,11 +87,29 @@
                         <p>Gasto actual total: <span id="sumfp"></span></p>
                         <p>Incremento de gasto: <span id="aupor"></span></p>
                     </div>
-                    <button type="submit" id="btn">Calcular Canasta</button>
+                    <div class="grafica-container">
+                        <canvas id="miGrafica"></canvas>
+                    </div>
+                    <div>
+                        <button type="submit" id="btn">Calcular Canasta</button>
+                    </div>
                 </div>
             </form>
         </main>
+        <div class="container">
+            <h2>La Conclusion</h2>
+            <p style="text-align: center;">
+                Entender el incremento en nuestra canasta familiar es clave para ajustar el presupuesto sin sacrificar 
+                el bienestar. Esta página es tu aliada estratégica; ya que te permite visualizar con precisión cuánto más estás 
+                gastando. Esta herramienta te ayuda hoy a calcular el impacto de la crisis en tu hogar, pero su verdadera utilidad reside 
+                en el tiempo; ya que no sabemos las cosas que vendran. 
+                No dejes de visitarnos para monitorear 
+                tus gastos, comparar precios y prepararte mejor para los desafíos financieros que vendrán.
+            </p>
+        </div>
+        <p class="piepag">Autor: Beymar Orlando Loza Mayta</p>
     </div>
-    <script src="javascript/script.js"></script>
+    
+    <script src="javascript/scripy.js"></script>
 </body>
 </html>

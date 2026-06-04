@@ -1,114 +1,166 @@
+/* Importación de fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background: linear-gradient(to left, #00ffeaaa, #00ff8cbb);
+    /* Fondo con un degradado más alegre */
+    background: linear-gradient(135deg, #e0f7fa 0%, #f1f8e9 100%);
     min-height: 100vh;
     padding: 20px;
+    color: #333;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
 }
 
 header {
     text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #00acc1;
+    padding-bottom: 20px;
+}
+
+h1 { color: #007c91; margin-bottom: 15px; }
+h2 { color: #007c91; margin-bottom: 15px;
+     text-align: center; 
+   }
+
+/* Grid de Productos */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
     margin-bottom: 30px;
 }
 
-h1 { color: #222; margin-bottom: 10px; }
-
-/* Grid para los productos */
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    gap: 20px;
-}
-
+/* Colores diferentes para cada tarjeta de producto */
 fieldset {
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 8px;
-    background: white;
+    border: none;
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
 }
+
+fieldset:hover { transform: translateY(-5px); }
+
+/* Producto 1: Menta */
+fieldset.colum:nth-child(1) { background-color: #e8f5e9; border-left: 5px solid #4caf50; }
+/* Producto 2: Coral suave */
+fieldset.colum:nth-child(2) { background-color: #fff3e0; border-left: 5px solid #ff9800; }
+/* Producto 3: Lavanda suave */
+fieldset.colum:nth-child(3) { background-color: #f3e5f5; border-left: 5px solid #9c27b0; }
 
 legend {
-    font-weight: bold;
-    padding: 0 10px;
-    color: #008f7a;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-label {
-    display: block;
-    font-size: 0.85em;
-    margin-top: 10px;
-    font-weight: bold;
-}
+label { display: block; margin-top: 12px; font-size: 0.85rem; font-weight: 600; }
 
 input {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
 }
+
+input:focus { border-color: #00acc1; box-shadow: 0 0 5px rgba(0,172,193,0.3); }
 
 .mini-res {
     margin-top: 15px;
-    padding-top: 10px;
-    border-top: 1px dashed #ccc;
-    font-size: 0.9em;
-    color: #444;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.9rem;
 }
 
-/* Sección inferior de totales */
+/* SECCIÓN DE TOTALES Y BOTÓN */
 .seccion-totales {
-    grid-column: span 3; /* Ocupa las 3 columnas */
-    text-align: center;
-    margin-top: 30px;
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .card-totales {
-    background: #222;
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    display: inline-block;
-    min-width: 300px;
+    background: #263238;
+    color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-button {
-    background-color: #008f7a;
+.card-totales span {
+    font-weight: 600;
+    color: #80deea;
+}
+
+/* Botón estilizado al final */
+#btn {
+    background: #00acc1;
     color: white;
     border: none;
-    padding: 15px 40px;
-    font-size: 1.1em;
+    padding: 15px 60px;
+    font-size: 1.2rem;
+    font-weight: 600;
     border-radius: 50px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,172,193,0.4);
+    margin-bottom: 20px;
 }
 
-button:hover {
-    background-color: #005a4e;
+#btn:hover {
+    background: #00838f;
     transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,172,193,0.6);
 }
 
-/* RESPONSIVO */
+/* Gráfica */
+.grafica-container {
+    display: none;
+    grid-column: span 3;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    height: 500px;
+    width: 500px;
+}
+.piepag{
+    text-align: center;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 20px;
+}
+
+/* Responsivo */
 @media (max-width: 900px) {
-    .productos-grid {
-        grid-template-columns: 1fr; /* Una columna en tablets/celulares */
-    }
-    .seccion-totales {
-        grid-column: span 1;
-    }
+    .productos-grid { grid-template-columns: 1fr; }
+    .seccion-totales, .grafica-container { grid-column: span 1; }
 }

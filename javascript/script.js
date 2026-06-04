@@ -1,9 +1,7 @@
 const f = document.getElementById("f");
 let miChart; // Variable para controlar la gráfica
 
-let boton=ocument.getElementById("btn");
-
-f.addEventListener("click", function(event) {
+f.addEventListener("submit", function(event) {
     event.preventDefault();
 
     const getData = (id) => parseFloat(document.getElementById(id).value) || 0;

@@ -45,6 +45,7 @@ La interfaz es intuitiva y fácil de entender. Para realizar un cálculo, sigue 
 
 Aquí puedes describir cómo están organizados tus archivos, por ejemplo:
 
+```text
 ├── index.html
 ├── css/
 │   └── estilos.css

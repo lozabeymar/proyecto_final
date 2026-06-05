@@ -149,7 +149,7 @@ input:focus { border-color: #00acc1; box-shadow: 0 0 5px rgba(0,172,193,0.3); }
     background: white;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    height: 600px;
+    height: 800px;
     width: 500px;
 }
 .piepag{

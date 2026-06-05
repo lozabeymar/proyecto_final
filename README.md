@@ -35,9 +35,19 @@ La interfaz es intuitiva y fácil de entender. Para realizar un cálculo, sigue 
 
 ---
 
-## 📸 Capturas de Pantalla
+## 📸 Capturas de Pantalla del Codigo
 
-*(Espacio reservado para las imágenes del proyecto)*
+### CSS para la grafica
+![Formulario](./imagenes/css.png)
+
+### Gráfica de Incrementos
+![Gráfica con el aumento de precios](./imagenes/grafico.png)
+
+### Funciones del JavaScript
+![Funciones](./imagenes/funciones.png)
+
+### HTML Estructura del Form
+![Estructura Formulario](./imagenes/html.png)
 
 ---
 
@@ -51,4 +61,9 @@ Aquí puedes describir cómo están organizados tus archivos, por ejemplo:
 │   └── estilos.css
 └── js/
     └── main.js
+└── imagenes/
+    └── css.png
+    └── funciones.png
+    └── grafico.png
+    └── html.png
 

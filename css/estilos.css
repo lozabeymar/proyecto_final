@@ -149,8 +149,8 @@ input:focus { border-color: #00acc1; box-shadow: 0 0 5px rgba(0,172,193,0.3); }
     background: white;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    height: 400px;
-    width: 700px;
+    height: 500px;
+    width: 600px;
 }
 .piepag{
     text-align: center;

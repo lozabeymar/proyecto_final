@@ -1,7 +1,53 @@
-Aumento en la canasta familiar 
-Este pagina nace de la necesidad, debido a la situacion del país, de calcular el aumento en los precios de la canasta familiar y asi regular el presupuesto.
-Funciona con codigos basicos que calculan el aumento de los productos, sus porcentajes y el gasto para la semana.
+# 🛒 Aumento en la Canasta Familiar (Bolivia)
 
-Tecnologias utilizadas
-- HTML5: Se utilizo una estructura basica de html5, aplicando <div> para organizar bien la pagina, ademas se utilizo <form> para la recoleccion de datos
-- CSS: Se utilizo una paleta de colores claros para la pagina, ademas se organizo utilizando el display: grid y el display:flex, ademas cuenta con un diseño  
+Debido a la coyuntura económica actual del país, nace la necesidad de crear una herramienta que permita calcular el aumento real en los precios de los productos básicos. Esta página web ayuda a las familias bolivianas a regular su presupuesto semanal de forma sencilla.
+
+El sistema permite calcular e interactuar con **hasta 3 productos de manera simultánea**, ofreciendo una aproximación realista de los gastos y variaciones de precio en el mercado local.
+
+---
+
+## 🚀 Características Principales
+
+* **Cálculo de Incremento:** Determina la diferencia exacta en Bs (Bolivianos) entre el precio anterior y el actual.
+* **Análisis Porcentual:** Muestra el porcentaje de aumento respecto al precio base de cada producto.
+* **Proyección Semanal:** Calcula el gasto total de la semana según el nivel de consumo ingresado.
+* **Comparativa Global:** Suma todos los productos para mostrar un balance del gasto semanal anterior frente al gasto semanal actual.
+* **Gráfica Interactiva:** Representación visual de los datos ingresados para un mejor análisis financiero.
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+* **HTML5:** Estructuración semántica utilizando contenedores `<div>` para la organización del contenido, además de formularios (`<form>` e `<input>`) para la recolección limpia de datos.
+* **CSS3:** Diseño responsivo adaptado para celulares y tablets mediante el uso de **@Media**, **Flexbox** y **CSS Grid**. Se aplicó una paleta de colores claros para garantizar una lectura cómoda.
+* **JavaScript (Vanilla):** Lógica de la pagina mediante funciones para los cálculos matemáticos, manipulación del DOM con `document.getElementById()` e inserción de resultados en tiempo real con `.innerText`.
+* **Librerías Externas:** Integración de una librería para la generación dinámica de gráficos basados en los datos del usuario.
+
+---
+
+## 📖 Modo de Uso
+
+La interfaz es intuitiva y fácil de entender. Para realizar un cálculo, sigue estos pasos:
+
+1. Ingresa el nombre de hasta 3 productos de la canasta familiar.
+2. Introduce el **precio anterior**, el **precio actual** y el **consumo semanal** estimado para cada uno.
+3. El sistema procesará los datos automáticamente para mostrarte los incrementos individuales y la comparativa de gastos totales.
+
+---
+
+## 📸 Capturas de Pantalla
+
+*(Espacio reservado para las imágenes del proyecto)*
+
+---
+
+## 📂 Estructura del Proyecto
+
+Aquí puedes describir cómo están organizados tus archivos, por ejemplo:
+
+├── index.html
+├── css/
+│   └── estilos.css
+└── js/
+    └── main.js
+
